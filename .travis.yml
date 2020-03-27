@@ -12,7 +12,8 @@ addons:
   sonarcloud:
     organization: "spring-api-cicd"
     token:
-      secure: $SONAR_TOKEN # encrypted value of your token
+      secure: 
+       - echo "$SONAR_TOKEN" # encrypted value of your token
 
 before_install:
 - mvn clean
@@ -27,7 +28,7 @@ script:
 - mvn heroku:deploy
 after_success:
 #Generating Site
-- travis_wait mvn site
+- travis_wait mvn site -o
 - bash <(curl -s https://codecov.io/bash)
 # SonarCloud
 # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
