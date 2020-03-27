@@ -1,275 +1,281 @@
 package org.spring.cicd.newsfeedapp.constant;
 
 public class HtmlTemplateConstants {
+	
+	//Listened to code coverage
+	private HtmlTemplateConstants() {}
+	
+	//Repetition removed
+	public static final String  delimeter = "\r\n";
 
-	public static final String NEWS_TEMPLATE = "<!DOCTYPE html>\r\n" + 
-			"<html>\r\n" + 
-			"<head>\r\n" + 
-			"<script src=\"https://unpkg.com/react@16/umd/react.production.min.js\"></script>\r\n" + 
-			"<script src=\"https://unpkg.com/react-dom@16/umd/react-dom.production.min.js\"></script>\r\n" + 
-			"<script src=\"https://unpkg.com/babel-standalone@6.15.0/babel.min.js\"></script>\r\n"+
-			"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js\"></script>\r\n"+
-			"<style>\r\n" + 
-			"html,\r\n" + 
-			"body {\r\n" + 
-			"  height: 100%;\r\n" + 
-			"  width: 100%;\r\n" + 
-			"  margin: 0;\r\n" + 
-			"  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".flex {\r\n" + 
-			"  display: flex;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".flexColumn {\r\n" + 
-			"  display: flex;\r\n" + 
-			"  flex-direction: column;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".hover:hover {\r\n" + 
-			"  cursor: pointer;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			"a {\r\n" + 
-			"  text-decoration: none;\r\n" + 
-			"  color: black;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			"#container {\r\n" + 
-			"  width: 100%;\r\n" + 
-			"  height: 100%;\r\n" + 
-			"  display: flex;\r\n" + 
-			"  flex-direction: column;\r\n" + 
-			"  max-width: 1000px;\r\n" + 
-			"  background: #fff;\r\n" + 
-			"  margin: 0px auto;\r\n" + 
-			"  text-align: center;\r\n" + 
-			"}\r\n" + 
-			"#container header {\r\n" + 
-			"  font-size: 32px;\r\n" + 
-			"  margin-top: 25px;\r\n" + 
-			"}\r\n" + 
-			"#container .date {\r\n" + 
-			"  font-size: 20px;\r\n" + 
-			"  font-weight: 600;\r\n" + 
-			"  margin-bottom: 0;\r\n" + 
-			"}\r\n" + 
-			"#container .needToKnow {\r\n" + 
-			"  font-size: 13px;\r\n" + 
-			"  margin-top: 2px;\r\n" + 
-			"  margin-bottom: 30px;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".postContainer {\r\n" + 
-			"  width: 900px;\r\n" + 
-			"  height: 240px;\r\n" + 
-			"  background: #f3f6f8;\r\n" + 
-			"  border-radius: 10px;\r\n" + 
-			"  padding: 8px 16px;\r\n" + 
-			"  margin: 0 auto;\r\n" + 
-			"  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);\r\n" + 
-			"  display: flex;\r\n" + 
-			"  position: relative;\r\n" + 
-			"  text-align: left;\r\n" + 
-			"  margin-bottom: 40px;\r\n" + 
-			"  transition-duration: .5s;\r\n" + 
-			"}\r\n" + 
-			".postContainer .mainImage {\r\n" + 
-			"  width: 320px;\r\n" + 
-			"  height: 256px;\r\n" + 
-			"  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);\r\n" + 
-			"  margin: 0;\r\n" + 
-			"  top: -8px;\r\n" + 
-			"  left: -16px;\r\n" + 
-			"  border-bottom-left-radius: 10px;\r\n" + 
-			"  border-top-left-radius: 10px;\r\n" + 
-			"  padding: 0;\r\n" + 
-			"  position: relative;\r\n" + 
-			"  z-index: 5;\r\n" + 
-			"  overflow: hidden;\r\n" + 
-			"}\r\n" + 
-			".postContainer .mainImage .image {\r\n" + 
-			"  object-fit: cover;\r\n" + 
-			"  height: 260px;\r\n" + 
-			"  width: 320px;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".postContainer:hover {\r\n" + 
-			"  transform: translateY(-5px);\r\n" + 
-			"  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".detailContainer {\r\n" + 
-			"  width: 580px;\r\n" + 
-			"}\r\n" + 
-			".detailContainer .detailTopLeft {\r\n" + 
-			"  width: 85%;\r\n" + 
-			"}\r\n" + 
-			".detailContainer .detailTopRight {\r\n" + 
-			"  width: 10%;\r\n" + 
-			"  background: transparent;\r\n" + 
-			"  float: right;\r\n" + 
-			"}\r\n" + 
-			".detailContainer .detailTopRight button {\r\n" + 
-			"  height: 35px;\r\n" + 
-			"  width: 90px;\r\n" + 
-			"  font-size: 16px;\r\n" + 
-			"  font-weight: 500;\r\n" + 
-			"  border-radius: 2px;\r\n" + 
-			"  background: transparent;\r\n" + 
-			"  color: rgba(0, 0, 0, 0.6);\r\n" + 
-			"  border: 1px solid rgba(0, 0, 0, 0.6);\r\n" + 
-			"  transition: all 300ms ease-in-out;\r\n" + 
-			"  transition-timing-function: ease-in-out;\r\n" + 
-			"}\r\n" + 
-			".detailContainer .detailTopRight button:hover {\r\n" + 
-			"  color: rgba(0, 0, 0, 0.9);\r\n" + 
-			"  border: 2px solid rgba(0, 0, 0, 0.9);\r\n" + 
-			"  background: rgba(0, 0, 0, 0.1);\r\n" + 
-			"  cursor: pointer;\r\n" + 
-			"}\r\n" + 
-			".detailContainer .title {\r\n" + 
-			"  font-size: 20px;\r\n" + 
-			"  font-weight: 600;\r\n" + 
-			"  margin: 0;\r\n" + 
-			"  text-overflow: ellipsis;\r\n" + 
-			"}\r\n" + 
-			".detailContainer .author {\r\n" + 
-			"  font-size: 14px;\r\n" + 
-			"  margin: 1px 0px;\r\n" + 
-			"  color: rgba(0, 0, 0, 0.5);\r\n" + 
-			"}\r\n" + 
-			".detailContainer .detail {\r\n" + 
-			"  font-size: 14px;\r\n" + 
-			"  line-height: 20px;\r\n" + 
-			"  text-overflow: ellipsis;\r\n" + 
-			"  height: 35px;\r\n" + 
-			"  overflow: hidden;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".editorPickContainer {\r\n" + 
-			"  height: 90px;\r\n" + 
-			"  border-radius: 10px;\r\n" + 
-			"  border: 1px solid rgba(0, 0, 0, 0.1);\r\n" + 
-			"  padding: 8px 16px;\r\n" + 
-			"  background-color: #fff;\r\n" + 
-			"}\r\n" + 
-			".editorPickContainer .editorsPick {\r\n" + 
-			"  font-size: 14px;\r\n" + 
-			"  color: rgba(0, 0, 0, 0.5);\r\n" + 
-			"}\r\n" + 
-			".editorPickContainer .imageContainer {\r\n" + 
-			"  width: 25px;\r\n" + 
-			"  margin: 4px;\r\n" + 
-			"}\r\n" + 
-			".editorPickContainer .editorsPickDetail {\r\n" + 
-			"  font-size: 14px;\r\n" + 
-			"  line-height: 20px;\r\n" + 
-			"  margin: 4px 5px;\r\n" + 
-			"  overflow: hidden;\r\n" + 
-			"  height: 40px;\r\n" + 
-			"}\r\n" + 
-			".editorPickContainer .seeMore {\r\n" + 
-			"  color: #3d94c4;\r\n" + 
-			"  font-size: 14px;\r\n" + 
-			"  font-weight: 600;\r\n" + 
-			"  margin: 4px 5px;\r\n" + 
-			"}\r\n" + 
-			"\r\n" + 
-			".authorImage {\r\n" + 
-			"  height: 25px;\r\n" + 
-			"  width: 25px;\r\n" + 
-			"  border-radius: 50%;\r\n" + 
-			"}\r\n"+
-			"</style>\r\n" + 
+	public static final String NEWS_TEMPLATE = "<!DOCTYPE html>" + delimeter + 
+			"<html>" + delimeter + 
+			"<head>" + delimeter + 
+			"<script src=\"https://unpkg.com/react@16/umd/react.production.min.js\"></script>" + delimeter + 
+			"<script src=\"https://unpkg.com/react-dom@16/umd/react-dom.production.min.js\"></script>" + delimeter + 
+			"<script src=\"https://unpkg.com/babel-standalone@6.15.0/babel.min.js\"></script>" + delimeter+
+			"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js\"></script>" + delimeter+
+			"<style>" + delimeter + 
+			"html," + delimeter + 
+			"body {" + delimeter + 
+			"  height: 100%;" + delimeter + 
+			"  width: 100%;" + delimeter + 
+			"  margin: 0;" + delimeter + 
+			"  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".flex {" + delimeter + 
+			"  display: flex;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".flexColumn {" + delimeter + 
+			"  display: flex;" + delimeter + 
+			"  flex-direction: column;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".hover:hover {" + delimeter + 
+			"  cursor: pointer;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			"a {" + delimeter + 
+			"  text-decoration: none;" + delimeter + 
+			"  color: black;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			"#container {" + delimeter + 
+			"  width: 100%;" + delimeter + 
+			"  height: 100%;" + delimeter + 
+			"  display: flex;" + delimeter + 
+			"  flex-direction: column;" + delimeter + 
+			"  max-width: 1000px;" + delimeter + 
+			"  background: #fff;" + delimeter + 
+			"  margin: 0px auto;" + delimeter + 
+			"  text-align: center;" + delimeter + 
+			"}" + delimeter + 
+			"#container header {" + delimeter + 
+			"  font-size: 32px;" + delimeter + 
+			"  margin-top: 25px;" + delimeter + 
+			"}" + delimeter + 
+			"#container .date {" + delimeter + 
+			"  font-size: 20px;" + delimeter + 
+			"  font-weight: 600;" + delimeter + 
+			"  margin-bottom: 0;" + delimeter + 
+			"}" + delimeter + 
+			"#container .needToKnow {" + delimeter + 
+			"  font-size: 13px;" + delimeter + 
+			"  margin-top: 2px;" + delimeter + 
+			"  margin-bottom: 30px;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".postContainer {" + delimeter + 
+			"  width: 900px;" + delimeter + 
+			"  height: 240px;" + delimeter + 
+			"  background: #f3f6f8;" + delimeter + 
+			"  border-radius: 10px;" + delimeter + 
+			"  padding: 8px 16px;" + delimeter + 
+			"  margin: 0 auto;" + delimeter + 
+			"  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);" + delimeter + 
+			"  display: flex;" + delimeter + 
+			"  position: relative;" + delimeter + 
+			"  text-align: left;" + delimeter + 
+			"  margin-bottom: 40px;" + delimeter + 
+			"  transition-duration: .5s;" + delimeter + 
+			"}" + delimeter + 
+			".postContainer .mainImage {" + delimeter + 
+			"  width: 320px;" + delimeter + 
+			"  height: 256px;" + delimeter + 
+			"  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);" + delimeter + 
+			"  margin: 0;" + delimeter + 
+			"  top: -8px;" + delimeter + 
+			"  left: -16px;" + delimeter + 
+			"  border-bottom-left-radius: 10px;" + delimeter + 
+			"  border-top-left-radius: 10px;" + delimeter + 
+			"  padding: 0;" + delimeter + 
+			"  position: relative;" + delimeter + 
+			"  z-index: 5;" + delimeter + 
+			"  overflow: hidden;" + delimeter + 
+			"}" + delimeter + 
+			".postContainer .mainImage .image {" + delimeter + 
+			"  object-fit: cover;" + delimeter + 
+			"  height: 260px;" + delimeter + 
+			"  width: 320px;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".postContainer:hover {" + delimeter + 
+			"  transform: translateY(-5px);" + delimeter + 
+			"  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".detailContainer {" + delimeter + 
+			"  width: 580px;" + delimeter + 
+			"}" + delimeter + 
+			".detailContainer .detailTopLeft {" + delimeter + 
+			"  width: 85%;" + delimeter + 
+			"}" + delimeter + 
+			".detailContainer .detailTopRight {" + delimeter + 
+			"  width: 10%;" + delimeter + 
+			"  background: transparent;" + delimeter + 
+			"  float: right;" + delimeter + 
+			"}" + delimeter + 
+			".detailContainer .detailTopRight button {" + delimeter + 
+			"  height: 35px;" + delimeter + 
+			"  width: 90px;" + delimeter + 
+			"  font-size: 16px;" + delimeter + 
+			"  font-weight: 500;" + delimeter + 
+			"  border-radius: 2px;" + delimeter + 
+			"  background: transparent;" + delimeter + 
+			"  color: rgba(0, 0, 0, 0.6);" + delimeter + 
+			"  border: 1px solid rgba(0, 0, 0, 0.6);" + delimeter + 
+			"  transition: all 300ms ease-in-out;" + delimeter + 
+			"  transition-timing-function: ease-in-out;" + delimeter + 
+			"}" + delimeter + 
+			".detailContainer .detailTopRight button:hover {" + delimeter + 
+			"  color: rgba(0, 0, 0, 0.9);" + delimeter + 
+			"  border: 2px solid rgba(0, 0, 0, 0.9);" + delimeter + 
+			"  background: rgba(0, 0, 0, 0.1);" + delimeter + 
+			"  cursor: pointer;" + delimeter + 
+			"}" + delimeter + 
+			".detailContainer .title {" + delimeter + 
+			"  font-size: 20px;" + delimeter + 
+			"  font-weight: 600;" + delimeter + 
+			"  margin: 0;" + delimeter + 
+			"  text-overflow: ellipsis;" + delimeter + 
+			"}" + delimeter + 
+			".detailContainer .author {" + delimeter + 
+			"  font-size: 14px;" + delimeter + 
+			"  margin: 1px 0px;" + delimeter + 
+			"  color: rgba(0, 0, 0, 0.5);" + delimeter + 
+			"}" + delimeter + 
+			".detailContainer .detail {" + delimeter + 
+			"  font-size: 14px;" + delimeter + 
+			"  line-height: 20px;" + delimeter + 
+			"  text-overflow: ellipsis;" + delimeter + 
+			"  height: 35px;" + delimeter + 
+			"  overflow: hidden;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".editorPickContainer {" + delimeter + 
+			"  height: 90px;" + delimeter + 
+			"  border-radius: 10px;" + delimeter + 
+			"  border: 1px solid rgba(0, 0, 0, 0.1);" + delimeter + 
+			"  padding: 8px 16px;" + delimeter + 
+			"  background-color: #fff;" + delimeter + 
+			"}" + delimeter + 
+			".editorPickContainer .editorsPick {" + delimeter + 
+			"  font-size: 14px;" + delimeter + 
+			"  color: rgba(0, 0, 0, 0.5);" + delimeter + 
+			"}" + delimeter + 
+			".editorPickContainer .imageContainer {" + delimeter + 
+			"  width: 25px;" + delimeter + 
+			"  margin: 4px;" + delimeter + 
+			"}" + delimeter + 
+			".editorPickContainer .editorsPickDetail {" + delimeter + 
+			"  font-size: 14px;" + delimeter + 
+			"  line-height: 20px;" + delimeter + 
+			"  margin: 4px 5px;" + delimeter + 
+			"  overflow: hidden;" + delimeter + 
+			"  height: 40px;" + delimeter + 
+			"}" + delimeter + 
+			".editorPickContainer .seeMore {" + delimeter + 
+			"  color: #3d94c4;" + delimeter + 
+			"  font-size: 14px;" + delimeter + 
+			"  font-weight: 600;" + delimeter + 
+			"  margin: 4px 5px;" + delimeter + 
+			"}" + delimeter + 
+			"" + delimeter + 
+			".authorImage {" + delimeter + 
+			"  height: 25px;" + delimeter + 
+			"  width: 25px;" + delimeter + 
+			"  border-radius: 50%;" + delimeter + 
+			"}" + delimeter+
+			"</style>" + delimeter + 
 			
-			"</head>\r\n" + 
-			"\r\n" + 
-			"<body>\r\n" + 
-			"\r\n" + 
+			"</head>" + delimeter + 
+			"" + delimeter + 
+			"<body>" + delimeter + 
+			"" + delimeter + 
 			"<div id=\"root\"><div>" + 
-			"\r\n" +
-			"<script type=\"text/babel\">\r\n" +
-			"const generateRandomUserImage = () => {\r\n" + 
-			"  let random = Math.floor(Math.random() * 70);\r\n" + 
-			"  let gender = ['men', 'women'][Math.floor(Math.random() * 2)];\r\n" + 
-			"  return `https://randomuser.me/api/portraits/${gender}/${random}.jpg`;\r\n" + 
-			"};\r\n" + 
-			"\r\n" + 
-			"const PostContainer = props => {\r\n" + 
-			"  const { authorImage, content, description, urlToImage, detail, title, author, source, url, editorsPick } = props.metaData;\r\n" + 
-			"  return (\r\n" + 
-			"    React.createElement(\"div\", { className: \"postContainer\" },\r\n" + 
-			"    React.createElement(\"div\", { className: \"mainImage\" },\r\n" + 
-			"    React.createElement(\"img\", { className: \"image\", src: urlToImage })),\r\n" + 
-			"\r\n" + 
-			"    React.createElement(\"div\", { className: \"detailContainer\" },\r\n" + 
-			"    React.createElement(\"div\", { className: \"flex\" },\r\n" + 
-			"    React.createElement(\"div\", { className: \"detailTopLeft\" },\r\n" + 
-			"    React.createElement(\"a\", { href: url, target: \"_blank\" }, React.createElement(\"p\", { className: \"title hover\" }, title && title.slice(0, 93))),\r\n" + 
-			"    React.createElement(\"p\", { className: \"author\" }, \"By \", author && author.slice(0, 30), \", Editor at \", source && source.name)),\r\n" + 
-			"\r\n" + 
-			"    React.createElement(\"div\", { className: \"detailTopRight\" },\r\n" + 
-			"    React.createElement(\"button\", null, \"Share\"))),\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"    React.createElement(\"a\", { href: url, target: \"_blank\" },\r\n" + 
-			"    React.createElement(\"p\", { className: \"detail hover\" }, description && description.slice(0, 165), \"...\")),\r\n" + 
-			"    React.createElement(\"div\", { className: \"editorPickContainer hover\" },\r\n" + 
-			"    React.createElement(\"a\", { href: url, target: \"_blank\" },\r\n" + 
-			"    React.createElement(\"div\", { className: \"editorsPick\" }, \"Editors' Pick\"),\r\n" + 
-			"    React.createElement(\"div\", { className: \"flex\" },\r\n" + 
-			"    React.createElement(\"div\", { className: \"imageContainer\" },\r\n" + 
-			"    React.createElement(\"img\", { className: \"authorImage\", src: authorImage || generateRandomUserImage() })),\r\n" + 
-			"\r\n" + 
-			"    React.createElement(\"div\", { className: \"flexColumn\" },\r\n" + 
-			"    React.createElement(\"div\", { className: \"editorsPickDetail\" }, content && content.slice(0, 140), \"...\"),\r\n" + 
-			"    React.createElement(\"div\", { className: \"seeMore\" }, \"See what people are saying -> \"))))))));\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"};\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"const App = () => {\r\n" + 
-			"  const [articles, setArticles] = React.useState([]);\r\n" + 
-			"  React.useEffect(() => {\r\n" + 
-			"    fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=d88837678f904443affbc28f7ee13ce1').then(data => {\r\n" + 
-			"      const jsonData = data.json();\r\n" + 
-			"      return jsonData;\r\n" + 
-			"    }).then(results => {\r\n" + 
-			"      const articles = results.articles;\r\n" + 
-			"      console.log(articles[0]);\r\n" + 
-			"      setArticles(articles);\r\n" + 
-			"    });\r\n" + 
-			"  }, []);\r\n" + 
-			"  return (\r\n" + 
-			"    React.createElement(\"div\", { id: \"container\" },\r\n" + 
-			"    React.createElement(\"header\", null, \"Daily Rundown\"),\r\n" + 
-			"    React.createElement(\"p\", { className: \"date\" }, moment(Date.now()).format('dddd, MMMM D')),\r\n" + 
-			"    React.createElement(\"p\", { className: \"needToKnow\" }, React.createElement(\"a\", { href: \"https://in.linkedin.com/in/sukanta-banerjee-6ab375100\", target: \"_blank\" }, \"Sukanta\"), \", here's what you need to know today\"),\r\n" + 
-			"    React.createElement(\"main\", null,\r\n" + 
-			"    articles.map(post => React.createElement(PostContainer, { metaData: post, key: post.title }))),\r\n" + 
-			"\r\n" + 
-			"    React.createElement(\"div\", { className: \"bottom\" },\r\n" + 
-			"    React.createElement(\"p\", null, \"You\\u2019re all caught up on today\\u2019s top news\"),\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"    React.createElement(\"p\", null, \"Have a great day\"))));\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"\r\n" + 
-			"};\r\n" + 
+			"" + delimeter +
+			"<script type=\"text/babel\">" + delimeter +
+			"const generateRandomUserImage = () => {" + delimeter + 
+			"  let random = Math.floor(Math.random() * 70);" + delimeter + 
+			"  let gender = ['men', 'women'][Math.floor(Math.random() * 2)];" + delimeter + 
+			"  return `https://randomuser.me/api/portraits/${gender}/${random}.jpg`;" + delimeter + 
+			"};" + delimeter + 
+			"" + delimeter + 
+			"const PostContainer = props => {" + delimeter + 
+			"  const { authorImage, content, description, urlToImage, detail, title, author, source, url, editorsPick } = props.metaData;" + delimeter + 
+			"  return (" + delimeter + 
+			"    React.createElement(\"div\", { className: \"postContainer\" }," + delimeter + 
+			"    React.createElement(\"div\", { className: \"mainImage\" }," + delimeter + 
+			"    React.createElement(\"img\", { className: \"image\", src: urlToImage }))," + delimeter + 
+			"" + delimeter + 
+			"    React.createElement(\"div\", { className: \"detailContainer\" }," + delimeter + 
+			"    React.createElement(\"div\", { className: \"flex\" }," + delimeter + 
+			"    React.createElement(\"div\", { className: \"detailTopLeft\" }," + delimeter + 
+			"    React.createElement(\"a\", { href: url, target: \"_blank\" }, React.createElement(\"p\", { className: \"title hover\" }, title && title.slice(0, 93)))," + delimeter + 
+			"    React.createElement(\"p\", { className: \"author\" }, \"By \", author && author.slice(0, 30), \", Editor at \", source && source.name))," + delimeter + 
+			"" + delimeter + 
+			"    React.createElement(\"div\", { className: \"detailTopRight\" }," + delimeter + 
+			"    React.createElement(\"button\", null, \"Share\")))," + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"    React.createElement(\"a\", { href: url, target: \"_blank\" }," + delimeter + 
+			"    React.createElement(\"p\", { className: \"detail hover\" }, description && description.slice(0, 165), \"...\"))," + delimeter + 
+			"    React.createElement(\"div\", { className: \"editorPickContainer hover\" }," + delimeter + 
+			"    React.createElement(\"a\", { href: url, target: \"_blank\" }," + delimeter + 
+			"    React.createElement(\"div\", { className: \"editorsPick\" }, \"Editors' Pick\")," + delimeter + 
+			"    React.createElement(\"div\", { className: \"flex\" }," + delimeter + 
+			"    React.createElement(\"div\", { className: \"imageContainer\" }," + delimeter + 
+			"    React.createElement(\"img\", { className: \"authorImage\", src: authorImage || generateRandomUserImage() }))," + delimeter + 
+			"" + delimeter + 
+			"    React.createElement(\"div\", { className: \"flexColumn\" }," + delimeter + 
+			"    React.createElement(\"div\", { className: \"editorsPickDetail\" }, content && content.slice(0, 140), \"...\")," + delimeter + 
+			"    React.createElement(\"div\", { className: \"seeMore\" }, \"See what people are saying -> \"))))))));" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"};" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"const App = () => {" + delimeter + 
+			"  const [articles, setArticles] = React.useState([]);" + delimeter + 
+			"  React.useEffect(() => {" + delimeter + 
+			"    fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=d88837678f904443affbc28f7ee13ce1').then(data => {" + delimeter + 
+			"      const jsonData = data.json();" + delimeter + 
+			"      return jsonData;" + delimeter + 
+			"    }).then(results => {" + delimeter + 
+			"      const articles = results.articles;" + delimeter + 
+			"      console.log(articles[0]);" + delimeter + 
+			"      setArticles(articles);" + delimeter + 
+			"    });" + delimeter + 
+			"  }, []);" + delimeter + 
+			"  return (" + delimeter + 
+			"    React.createElement(\"div\", { id: \"container\" }," + delimeter + 
+			"    React.createElement(\"header\", null, \"Daily Rundown\")," + delimeter + 
+			"    React.createElement(\"p\", { className: \"date\" }, moment(Date.now()).format('dddd, MMMM D'))," + delimeter + 
+			"    React.createElement(\"p\", { className: \"needToKnow\" }, React.createElement(\"a\", { href: \"https://in.linkedin.com/in/sukanta-banerjee-6ab375100\", target: \"_blank\" }, \"Sukanta\"), \", here's what you need to know today\")," + delimeter + 
+			"    React.createElement(\"main\", null," + delimeter + 
+			"    articles.map(post => React.createElement(PostContainer, { metaData: post, key: post.title })))," + delimeter + 
+			"" + delimeter + 
+			"    React.createElement(\"div\", { className: \"bottom\" }," + delimeter + 
+			"    React.createElement(\"p\", null, \"You\\u2019re all caught up on today\\u2019s top news\")," + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"    React.createElement(\"p\", null, \"Have a great day\"))));" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"" + delimeter + 
+			"};" + delimeter + 
 			"ReactDOM.render(React.createElement(App, null), document.getElementById('root'));" + 
-			"</script>\r\n" +
-			"</body>\r\n" + 
+			"</script>" + delimeter +
+			"</body>" + delimeter + 
 			
 			"</html>";
 	
