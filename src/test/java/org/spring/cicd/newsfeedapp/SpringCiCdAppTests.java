@@ -14,20 +14,21 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 
 public class SpringCiCdAppTests {
-	
+
 	@Autowired
 	private NewsFeedController newsFeedController;
 
 	@Test
 	public void contextLoads() {
-		
-		Assert.assertEquals(HtmlTemplateConstants.NEWS_TEMPLATE,newsFeedController.getFeed() );
+
+		Assert.assertEquals(HtmlTemplateConstants.NEWS_TEMPLATE, newsFeedController.getFeed());
 	}
-	
+
 	@Test
-	   public void main() {
+	public void main() {
+		
 		SpringCiCdApp.main(new String[] {});
-	   }
 	
+	}
 
 }
