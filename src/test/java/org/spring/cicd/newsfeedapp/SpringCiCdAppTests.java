@@ -24,6 +24,10 @@ public class SpringCiCdAppTests {
 		Assert.assertEquals(HtmlTemplateConstants.NEWS_TEMPLATE,newsFeedController.getFeed() );
 	}
 	
+	@Test
+	   public void main() {
+		SpringCiCdApp.main(new String[] {});
+	   }
 	
 
 }
