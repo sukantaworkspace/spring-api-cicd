@@ -7,9 +7,11 @@ Implementing Continuous Integration/Continuous Delivery on Spring Boot Java App
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=org.spring.cicd:spring-api-cicd&metric=alert_status)](https://sonarcloud.io/dashboard/index/org.spring.cicd:spring-api-cicd)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## I've added Javadoc plugin in pom.xml, The following link might not work
+## I've added Javadoc plugin in pom.xml
 
-https://sukantaworkspace.github.io/spring-api-cicd/project-reports.html
+## The following link if to access the application deployed on heroku
+
+https://spring-api-cicd.herokuapp.com/
 
 ## I've added packaging jar 
 
