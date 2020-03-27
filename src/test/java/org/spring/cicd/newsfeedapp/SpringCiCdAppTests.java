@@ -3,6 +3,7 @@ package org.spring.cicd.newsfeedapp;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.spring.cicd.newsfeedapp.constant.HtmlTemplateConstants;
 import org.spring.cicd.newsfeedapp.controller.NewsFeedController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +21,7 @@ public class SpringCiCdAppTests {
 	@Test
 	public void contextLoads() {
 		
-		Assert.assertEquals("Hello World from India",newsFeedController.getFeed() );
+		Assert.assertEquals(HtmlTemplateConstants.NEWS_TEMPLATE,newsFeedController.getFeed() );
 	}
 	
 	
