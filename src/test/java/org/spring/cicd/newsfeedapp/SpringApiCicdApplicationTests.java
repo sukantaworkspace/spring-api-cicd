@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 
-public class SpringCiCdAppTests {
+public class SpringApiCicdApplicationTests {
 
 	@Autowired
 	private NewsFeedController newsFeedController;
@@ -27,7 +27,7 @@ public class SpringCiCdAppTests {
 	@Test
 	public void main() {
 		
-		SpringCiCdApp.main(new String[] {});
+		SpringApiCicdApplication.main(new String[] {});
 	
 	}
 

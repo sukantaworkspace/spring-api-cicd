@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 
-public class SpringCiCdApp {
+public class SpringApiCicdApplication {
 	
 	
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCiCdApp.class, args);
+		SpringApplication.run(SpringApiCicdApplication.class, args);
 	}
 
 }
