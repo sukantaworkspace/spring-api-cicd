@@ -13,6 +13,10 @@ Implementing Continuous Integration/Continuous Delivery on Spring Boot Java App
 
 https://spring-api-cicd.herokuapp.com/
 
+## The following link is how to do setup of this project
+
+https://medium.com/@sukanta.workspace/ci-cd-of-spring-boot-application-with-travis-ci-github-docker-codecov-sonar-cloud-and-e331ab6f0a2f
+
 ## I've added packaging jar 
 
 ```
