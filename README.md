@@ -9,7 +9,7 @@ Implementing Continuous Integration/Continuous Delivery on Spring Boot Java App
 
 ## I've added Javadoc plugin in pom.xml
 
-## The following link if to access the application deployed on heroku
+## The following link is to access the application deployed on heroku
 
 https://spring-api-cicd.herokuapp.com/
 
