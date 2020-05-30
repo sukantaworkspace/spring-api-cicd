@@ -200,7 +200,7 @@ public class HtmlTemplateConstants {
 			"const generateRandomUserImage = () => {" + delimiter + 
 			"  let random = Math.floor(Math.random() * 70);" + delimiter + 
 			"  let gender = ['men', 'women'][Math.floor(Math.random() * 2)];" + delimiter + 
-			"  return `https://randomuser.me/api/portraits/${gender}/${random}.jpg`;" + delimiter + 
+			"  return `http://randomuser.me/api/portraits/${gender}/${random}.jpg`;" + delimiter + 
 			"};" + delimiter + 
 			"" + delimiter + 
 			"const PostContainer = props => {" + delimiter + 
