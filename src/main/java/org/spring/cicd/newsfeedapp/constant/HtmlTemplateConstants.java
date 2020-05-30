@@ -245,7 +245,7 @@ public class HtmlTemplateConstants {
 			"const App = () => {" + delimiter + 
 			"  const [articles, setArticles] = React.useState([]);" + delimiter + 
 			"  React.useEffect(() => {" + delimiter + 
-			"    fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=d88837678f904443affbc28f7ee13ce1').then(data => {" + delimiter + 
+			"    fetch('https://spring-api-cicd.herokuapp.com/https://newsapi.org/v2/top-headlines?country=in&apiKey=d88837678f904443affbc28f7ee13ce1').then(data => {" + delimiter + 
 			"      const jsonData = data.json();" + delimiter + 
 			"      return jsonData;" + delimiter + 
 			"    }).then(results => {" + delimiter + 
